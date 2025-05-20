@@ -10,8 +10,27 @@
     <header>
       <h1>my style guide/design system</h1>
     <header>
-    <section>
-      
+    <section class="box-model">
+      <h2>CSS Box Model</h2>
+      <img src="images/the-box-model.png" alt="The Box Model">
+    </section>
+    <section class="box-model">
+      <h1>CSS Borders</h1>
+      <div class="example-code">
+        <p style="color: blue">border-top: 3px solid blue;</p>
+        <p style="color: orange">border-right: 5px dotted orange;</p>
+        <p style="color: red">border-bottom: 7px groove red;</p>
+        <p style="color: greenyellow">border-left: 9px double greenyellow;</p>
+        <p>border-radius: 0px 30px 70px 20px;</p>
+        <p>border-radius: (top-left) (top-right)<br><br><br> (bottom-right) (bottom-left)</p>
+      </div>
+      <div id="hemisphere" class="borders">Hemisphere</div>
+      <div id="adv-hemisphere" class="borders">Adv-hemisphere</div>
+      <div id="round-rectangle" class="borders">Round<br>Rectangle</div>
+      <div id="adv-round-rectangle" class="borders">Adv-round<br>Rectangle</div>
+    </section>
+    <section id="colors">
+      <h2>Colors Palettes</h2>
       <ul class="palette">
         <li id="amber">
           <div class="color-info">
@@ -44,72 +63,73 @@
           </div>
         </li>
       </ul>   
-     
+     <!-- yellow-orange-brown palette -->
       <ul class="palette">
-        <li id="verdigris">
+        <li id="tawny">
           <div class="color-info">
-            <p>Verdigris</p>
-            <p>#75B9BE</p>
+            <p>Tawny</p>
+            <p>#CC5803</p>
           </div>
         </li>
-        <li id="light-blue">
-          <div class="color-info">
-          <p>Light blue</p>
-          <p>#A8CCC9</p>
+        <li id="cocoa-brown">
+          <div class="color-info up">
+          <p>Cocoa</p>
+          <p>Brown</p>
+          <p>#E2711D</p>
           </div>
         </li>
-        <li id="ash-gray">
-          <div class="color-info">
-          <p>Ash gray</p>
-          <p>#B3D6C6</p>
+        <li id="princeton-orange">
+          <div class="color-info up">
+          <p>Princeton</p>
+          <p> Orange</p>
+          <p>#FF9505</p>
           </div>
         </li>
-        <li id="tea-green">
-          <div class="color-info">
-          <p>Tea green</p>
-          <p>#DCEAB2</p>
+        <li id="selective-yellow">
+          <div class="color-info up">
+          <p>Selective</p>
+          <p>Yellow</p>
+          <p>#FFB627</p>
           </div>
         </li>
-        <li id="straw">
+        <li id="xanthous">
           <div class="color-info">
-          <p>Straw</p>
-          <p>#C7D66D</p>
+          <p>Xanthous</p>
+          <p>#FFC971</p>
           </div>
         </li>
       </ul>   
-     
-     
+     <!-- RED-PINK PALETTE -->
       <ul class="palette">
-        <li id="melon">
+        <li id="ou-crimson">
           <div class="color-info">
-            <p>Melon</p>
-            <p>#FFB5A7</p>
+            <p>OU Crimson</p>
+            <p>#880d1e</p>
           </div>
         </li>
-        <li id="pale-dogwood">
+        <li id="rusty-red">
+          <div class="color-info">
+          <p>Rusty Red</p>
+          <p>#dd2d4a</p>
+          </div>
+        </li>
+        <li id="bright-pink">
+          <div class="color-info">
+          <p>Bright Pink</p>
+          <p>#f26a8d</p>
+          </div>
+        </li>
+        <li id="amaranth-pink">
           <div class="color-info up">
-          <p>Pale</p>
-          <p>Dogwood</p>
-          <p>#FCD5CE</p>
+          <p>Amaranth</p>
+          <p>Pink</p>
+          <p>#f49cbb</p>
           </div>
         </li>
-        <li id="seashell">
+        <li id="light-cyan">
           <div class="color-info">
-          <p>Seashell</p>
-          <p>#F8EDEB</p>
-          </div>
-        </li>
-        <li id="champagne-pink">
-          <div class="color-info up">
-          <p>Champagne</p>
-          <p>pink</p>
-          <p>#F9DCC4</p>
-          </div>
-        </li>
-        <li id="peach">
-          <div class="color-info">
-          <p>Peach</p>
-          <p>#FEC89A</p>
+          <p>Light Cyan</p>
+          <p>#cbeef3</p>
           </div>
         </li>
       </ul>   
@@ -183,7 +203,79 @@
           <p>#FB6F92</p>
           </div>
         </li>
-      </ul>   
+      </ul>
+      <!-- GREEN PALETTE -->
+      <ul class="palette">
+        <li id="pakistan-green">
+          <div class="color-info up">
+            <p>Pakistan</p>
+            <p>Green</p>
+            <p>#134611</p>
+          </div>
+        </li>
+        <li id="india-green">
+          <div class="color-info">
+          <p>India Green</p>
+          <p>#3e8914</p>
+          </div>
+        </li>
+        <li id="pigment-green">
+          <div class="color-info up">
+          <p>Pigment</p>
+          <p>Green</p>
+          <p>#3da35d</p>
+          </div>
+        </li>
+        <li id="light-green">
+          <div class="color-info">
+          <p>Light Green</p>
+          <p>#96e072</p>
+          </div>
+        </li>
+        <li class="nyanza">
+          <div class="color-info">
+          <p>Nyanza</p>
+          <p>#e8fccf</p>
+          </div>
+        </li>
+      </ul>
+      <!-- END GREEN PALETTE -->
+      <!-- BROWN PALETTE -->
+      <ul class="palette">
+        <li id="drab-dark-brown">
+          <div class="color-info up">
+            <p>Drab Dark</p>
+            <p>Brown</p>
+            <p>#134611</p>
+          </div>
+        </li>
+        <li id="walnut-brown">
+          <div class="color-info up">
+          <p>Walnut</p>
+          <p> Brown</p>
+          <p>#3e8914</p>
+          </div>
+        </li>
+        <li id="ecru">
+          <div class="color-info">
+          <p>Ecru</p>
+          <p>#3da35d</p>
+          </div>
+        </li>
+        <li id="sage">
+          <div class="color-info">
+          <p>Sage</p>
+          <p>#96e072</p>
+          </div>
+        </li>
+        <li class="nyanza">
+          <div class="color-info">
+          <p>Nyanza</p>
+          <p>#e8fccf</p>
+          </div>
+        </li>
+      </ul>
+      <!-- END BROWN PALETTE -->
     </section>
     <section id="fonts">
 

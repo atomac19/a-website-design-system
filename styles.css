@@ -1,15 +1,82 @@
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
-
+body {
+  width: 1200px;
+  margin: auto;
+}
 h1 {
   text-transform: capitalize;
+  
+}
+/* BOX MODEL */
+.box-model {
+  width: 500px;
+  height: auto;
+  border: 2px double black;
+  text-align: center;
+  margin: auto;
+}
+img {
+  width: 480px;
+  height: 380px;
 }
 
-section {
+.example-code {
+  width: 350px;
+  height: 170px;
+  margin: 20px auto;
+  border-top: 3px solid blue;
+  border-right: 5px dotted orange;
+  border-bottom: 7px groove red;
+  border-left: 9px double greenyellow;
+  padding-bottom: 10px;
+  border-radius: 0px 30px 70px 20px;
+  line-height: 7px;
+}
+.borders {
+  padding-top: 20px;
+  margin: 10px auto;
+}
+#hemisphere {
+  width: 150px;
+  height: 70px;
+  border: thick solid purple;
+  border-radius: 100px 100px 0 0; 
+}
+
+#adv-hemisphere{
+  width: 200px;
+  height: 90px;
+  border-width: 4px 30px 4px 30px;
+  border-style: groove ridge dashed groove;
+  border-color: #cc0000;
+  border-radius:100px 100px 0 0;
+}
+#round-rectangle{
+  width: 150px;
+  height: 70px;
+  border: 3px solid #ffbe0b;
+  border-radius: 20px;
+}
+#adv-round-rectangle{
+  width: 150px;
+  height: 70px;
+  border-width: 0px 12px 0px 12px;
+  border-style: double;
+  border-color: #cbeef3;
+  border-radius:40px 40px 60px 60px;
+}
+
+/* END OF BOX MODEL */
+/* COLORS SECTION */
+#colors {
   width: 500px;
-  height: 520px;
+  height: 1340px;
   border: 2px double black;
+  text-align: center;
+  margin: 10px auto;
 }
 
 .palette {
@@ -67,35 +134,35 @@ li {
 #azure {
   background-color: #3A86FF;
 }
-#verdigris {
-  background-color: #75B9BE;
+#tawny {
+  background-color: #CC5803;
 }
-#light-blue {
-  background-color: #A8CCC9;
+#cocoa-brown {
+  background-color: #E2711D;
 }
-#ash-gray {
-  background-color: #b3d6c6;
+#princeton-orange {
+  background-color: #FF9505;
 }
-#tea-green {
-  background-color: #dceab2;
+#selective-yellow {
+  background-color: #FFB627;
 }
-#straw {
-  background-color: #c7d66d;
+#xanthous {
+  background-color: #FFC971;
 }
-#melon {
-  background-color: #ffb5a7;
+#ou-crimson {
+  background-color: #880d1e;
 }
-#pale-dogwood {
-  background-color: #fcd5ce;
+#rusty-red {
+  background-color: #dd2d4a;
 }
-#seashell {
-  background-color: #f8edeb;
+#bright-pink {
+  background-color: #f26a8d;
 }
-#champagne-pink {
-  background-color: #f9dcc4;
+#amaranth-pink {
+  background-color: #f49cbb;
 }
-#peach {
-  background-color: #fec89a;
+#light-cyan {
+  background-color: #cbeef3;
 }
 #picton-blue {
   background-color: #00a6fb;
@@ -127,3 +194,33 @@ li {
 #rose-pompadour {
   background-color: #fb6f92;
 }
+#pakistan-green {
+  background-color: #134611;
+}
+#india-green {
+  background-color: #3e8914;
+}
+#pigment-green {
+  background-color: #3da35d;
+}
+#light-green {
+  background-color: #96e072;
+}
+.nyanza {
+  background-color: #e8fccf;
+}
+#drab-dark-brown {
+  background-color: #363020;
+  color: white;
+}
+#walnut-brown {
+  background-color: #605C4E;
+  color: white;
+}
+#ecru {
+  background-color: #A49966;
+}
+#sage {
+  background-color: #C7C7A6;
+}
+/* END OF COLORS SECTION */
