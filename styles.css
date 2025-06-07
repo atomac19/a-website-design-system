@@ -1,5 +1,6 @@
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   text-align: center;
 }
 body {
@@ -10,13 +11,17 @@ h1 {
   text-transform: capitalize;
   
 }
+
+
+
+
 /* BOX MODEL */
 .box-model {
-  width: 500px;
+  width: 550px;
   height: auto;
   border: 2px double black;
   text-align: center;
-  margin: auto;
+  margin: 10px auto;
 }
 img {
   width: 480px;
@@ -51,25 +56,104 @@ img {
   height: 90px;
   border-width: 4px 30px 4px 30px;
   border-style: groove ridge dashed groove;
-  border-color: #cc0000;
+  border-color: #3da35d;
   border-radius:100px 100px 0 0;
 }
 #round-rectangle{
   width: 150px;
   height: 70px;
-  border: 3px solid #ffbe0b;
+  border: 10px solid #00a6fb;
   border-radius: 20px;
+  color: #00a6fb;
 }
 #adv-round-rectangle{
   width: 150px;
   height: 70px;
   border-width: 0px 12px 0px 12px;
   border-style: double;
-  border-color: #cbeef3;
-  border-radius:40px 40px 60px 60px;
+  border-color: #ff006e;
+  border-radius: 40px 40px 60px 60px;
+  color: #ff006e;
 }
 
 /* END OF BOX MODEL */
+
+/* GRID DISPLAY */
+.grid-display {
+  width: 95%;
+  border: 5px solid violet;
+  margin: 10px;
+  display: grid;
+  grid:
+    "header header header" auto
+    "leftSide body ." 1fr
+    "footer footer footer" auto
+    / auto 1fr auto;
+    gap: 8px;
+}
+
+.header { 
+  grid-area: header;
+  border: 2px dotted green;
+}
+.leftSide { 
+  grid-area: leftSide;
+  border: 2px dotted orange;
+}
+.body { 
+  grid-area: body;
+  border: 2px solid red;
+  text-align: left;
+}
+.rightSide { 
+  grid-area: rightSide;
+  border: 2px dotted orange;
+}
+.footer { 
+  grid-area: footer; 
+  border: 2px dotted blue;
+}
+
+.grid-display-right {
+  width: 95%;
+  border: 5px solid burlywood;
+  margin: 10px;
+  display: grid;
+  grid:
+    "header header header" auto
+    ". body rightSide" 1fr
+    "footer footer footer" auto
+    / auto 1fr auto;
+  gap: 8px;
+}
+/* -----------------END OF GRID DISPLAY -------------------*/
+
+/* ---------------FLEX DISPLAY ----------------------------*/
+.flex-display-1 {
+  width: 95%;
+  border: 2px solid yellowgreen;
+  margin: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.item {
+  border: 5px solid lightseagreen;
+}
+
+.flex-display-2 {
+  width: 95%;
+  margin: 8px;
+  border: 2px solid yellowgreen;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+/*---------------- END OF FLEX DISPLAY --------------------*/
+
 /* COLORS SECTION */
 #colors {
   width: 500px;
@@ -224,3 +308,161 @@ li {
   background-color: #C7C7A6;
 }
 /* END OF COLORS SECTION */
+
+/* BUTTONS SECTION */
+.greenButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.greenButton:hover {
+	background-color:#5cbf2a;
+}
+.greenButton:active {
+	position:relative;
+	top:1px;
+}
+
+.turquoiseButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.turquoiseButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.turquoiseButton:active {
+	position:relative;
+	top:1px;
+}
+.grayButton {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.grayButton:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.grayButton:active {
+	position:relative;
+	top:1px;
+}
+.redButton {
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	background-color:#f24537;
+	border-radius:6px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.redButton:hover {
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	background-color:#c62d1f;
+}
+.redButton:active {
+	position:relative;
+	top:1px;
+}
+
+/*--------- END OF BUTTON SECTION -------------*/
+
+/* ------- FONT STYLES --------- */
+
+.font-1 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  }
+
+.font-2 {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  
+  font-style: italic;
+}
+
+.font-3 {
+  font-family: "Merriweather", serif;
+  font-style: ;
+}
+
+.font-4 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+}
+
+.font-5 {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+}
+
+/* ----------- TEXT STYLES ------------------- */ 
+.txt-style {
+  line-height: 15px;
+  
+}
+
+.bld {
+  font-weight: bold;
+  
+}
+.supertitle {
+  
+  line-height: 24px;
+}
+.title {
+  
+  line-height: 30px;
+}
+.subtitle {
+  
+  line-height: 18px;
+}
+.article {
+  font-size: 14px;
+  line-height: 18px;
+}
+.intertitle {
+  
+  line-height: 18px;
+}
+
+/* --------- END OF TEXT STYLES --------------- */

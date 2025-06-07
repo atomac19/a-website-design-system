@@ -5,17 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Style Guide/ Design System</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Space+Mono&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <h1>my style guide/design system</h1>
-    <header>
+      <a href="https://dev.to/devshefali/14-css-generators-that-will-save-you-hours-of-coding-4m5l">14 CSS Generators</a>
+      <a href="https://css-generator.netlify.app/">CSS Generator Netlify</a>
+      <a href="https://www.cssportal.com/">CSS Portal</a>
+      <a href="https://layout.bradwoods.io/">CSS Layouts</a>
+      <a href="https://www.uisurgeon.com/tools/css-position-generator">CSS position generator</a>
+      <a href=""></a>
+      
+    </header>
     <section class="box-model">
       <h2>CSS Box Model</h2>
-      <img src="images/the-box-model.png" alt="The Box Model">
+      <img src="the-box-model.png" alt="The Box Model">
+    </section>
+    <section class="box-model">
+      <h2>Grid Display</h2>
+      <section class="grid-display">
+        <div class="header">Header</div>
+        <div class="leftSide">Left Side</div>
+        <div class="body">Main Content: Display Grid
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? 
+        </div>
+        <div class="footer">Footer</div>
+      </section>
+      <section class="grid-display-right">
+        <div class="header">Header</div>
+        <div class="body">Main Content: Display Grid
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        </div>
+        <div class="rightSide">Right Side</div>
+        <div class="footer">Footer</div>
+      </section> 
+      
+        <h2>Flex Display</h2>
+        <section class="flex-display-1">
+          <div class="item">direction: row</div>
+          <div class="item">flex-wrap: wrap</div>
+          <div class="item">gap: 8px</div>
+          <div class="item">xxx</div>
+          <div class="item">xxx</div>
+        </section>
+        <section class="flex-display-2">
+          <div class="item">1.item</div>
+          <div class="item">2.item</div>
+          <div class="item">3.item</div>
+          <div class="item">justify-content: center</div>
+          <div class="item">xxx</div>
+        </section>
     </section>
     <section class="box-model">
       <h1>CSS Borders</h1>
+      <a href="https://angrytools.com/css-generator/border/">Link to CSS Border Generator</a>
       <div class="example-code">
         <p style="color: blue">border-top: 3px solid blue;</p>
         <p style="color: orange">border-right: 5px dotted orange;</p>
@@ -29,7 +75,7 @@
       <div id="round-rectangle" class="borders">Round<br>Rectangle</div>
       <div id="adv-round-rectangle" class="borders">Adv-round<br>Rectangle</div>
     </section>
-    <section id="colors">
+    <section class="box-model">
       <h2>Colors Palettes</h2>
       <ul class="palette">
         <li id="amber">
@@ -102,7 +148,7 @@
      <!-- RED-PINK PALETTE -->
       <ul class="palette">
         <li id="ou-crimson">
-          <div class="color-info">
+          <div class="color-info white-font">
             <p>OU Crimson</p>
             <p>#880d1e</p>
           </div>
@@ -207,7 +253,7 @@
       <!-- GREEN PALETTE -->
       <ul class="palette">
         <li id="pakistan-green">
-          <div class="color-info up">
+          <div class="color-info up white-font">
             <p>Pakistan</p>
             <p>Green</p>
             <p>#134611</p>
@@ -277,14 +323,49 @@
       </ul>
       <!-- END BROWN PALETTE -->
     </section>
-    <section id="fonts">
+    <!-- END PALETTES SECTION -->
 
+    <!-- TYPOGRAPHY SECTION -->
+    <section class="box-model" style="text-align: left;">
+      <h2>Favorite Fonts</h2>
+      <h5 class="font-1" style="font-weight: 100;">“We cannot solve problems with the kind of thinking we employed when we came up with them.” — Albert Einstein</h5>
+      <h4 class="font-1" style="font-weight: 300;">“We cannot solve problems with the kind of thinking we employed when we came up with them.” — Albert Einstein</h4>
+      <h3 class="font-1" style="font-weight: 500;">“We cannot solve problems with the kind of thinking we employed when we came up with them.” — Albert Einstein</h3>
+      <h2 class="font-1" style="font-weight: 700;">“We cannot solve problems with the kind of thinking we employed when we came up with them.” — Albert Einstein</h2>
+      <h1 class="font-1" style="font-weight: 900;">“We cannot solve problems with the kind of thinking we employed when we came up with them.” — Albert Einstein</h1>
+      <p class="font-2" style="font-weight: 900;" >“Always remember that you are absolutely unique. Just like everyone else.” — Margaret Mead </p>
+      <p class="font-2" style="font-weight: 500;">“Always remember that you are absolutely unique. Just like everyone else.” — Margaret Mead </p>
+      <p class="font-2" style="font-weight: 100;">“Always remember that you are absolutely unique. Just like everyone else.” — Margaret Mead </p>
+      <p class="font-3" style="font-style: normal;">“You don’t always need a plan. Sometimes you just need to breathe, trust, let go and see what happens.” — Mandy Hale </p>
+      <p class="font-3" style="font-style: oblique;">“You don’t always need a plan. Sometimes you just need to breathe, trust, let go and see what happens.” — Mandy Hale </p>
+      <p class="font-3" style="font-style: italic;">“You don’t always need a plan. Sometimes you just need to breathe, trust, let go and see what happens.” — Mandy Hale </p>
+      <p class="font-4">“It is during our darkest moments that we must focus to see the light.” — Aristotle  </p>
+      <p class="font-5">“Love the life you live. Live the life you love.” — Bob Marley </p>
+      
     </section>
-    <section id="text styles">
-
+    <section >
+      <h2>Typography</h2>
+      <div class="box-model font-5">
+      <h2 class="supertitle bld" >First call in Sombor's "Joker"</h2>
+      <h1 class="title bld" style="font-size: 30px;">AGAIN FROM THE TOP POSITION TO THE CHAMPIONSHIP TITLE</h1>
+      <h3 class="bld subtitle">The goals, aspirations and wishes remained the same as the last, debut season - a championship title with the development and affirmation of young players.</h3>
+      <p class="article">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt." </p>
+      <h4 class="intertitle bld">New Players For New Season</h4>
+      <p class="article">
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."</p>
+       <p class="intertitle bld">The first two rounds at home</p>
+      <p class="article">
+      The new season starts on October 5, and the draw decided that the "jokers" will start again from the first position, which means that they will play the first two rounds at home, against "Mladost" and OKK "Novi Pazar".</p>
+      </div>
     </section>
-    <section id="buttons">
-
+    <!-- END TYPOGRAPHY SECTION -->
+    <!-- BUTTONS SECTION -->
+    <section class="box-model">
+      <h2>Buttons styles</h2>
+      <a href="#" class="greenButton">Green</a>
+      <a href="#" class="turquoiseButton">turquoise</a>
+      <a href="#" class="grayButton">grey</a>
+      <a href="#" class="redButton">red</a>
     </section>
-  <body>
+  </body>
 </html>
